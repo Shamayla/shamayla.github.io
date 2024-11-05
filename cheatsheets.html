@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cheat Sheet</title>
+    <link href="/resources/css/index.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="cheatsheet">
+        <nav>
+          <h1>Learn CSS & HTML</h1>
+          <ul>
+            <li><a href="index.html">CSS Cheatsheet</a></li>
+            <li><a href="#">HTML Cheatsheet</a></li>
+          </ul>
+        </nav>
+      <div class="content">
+        <div class="syntax">
+          <h2>Syntax to write CSS</h1>
+          <img src="/resources/images/css-syntax.png" />
+        </div>
+        <h2>Selectors</h2>
+        <div class="selectors">
+
+          <table>
+            <thead>
+            <tr>
+              <th colspan="3">Basic Selectors</th>
+            </tr>
+            <tr>
+              <th>Selector</th><th>Description</th><th>Example</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>tagname</td><td>selecting HTML elements by tag name</td><td class="code">p {
+                color: blue;
+                font-size: 16px;
+              }
+              </td>
+            </tr>
+            <tr>
+              <td>.classname</td><td>selector is used to target elements by their class attribute</td><td class="code">.button {
+                background-color: blue;
+                color: white;
+                padding: 10px 20px;
+              }
+              </td>
+            </tr>
+            <tr>
+              <td>#id</td><td>selector is used to target elements by their unique id attribute</td><td class="code">#header {
+                background-color: #f0f0f0;
+                padding: 20px;
+              }
+              </td>
+            </tr>
+            <tr>
+              <td>[attr=value]</td><td>selector in CSS is used to target elements that have a specific attribute with an exact value</td><td class="code">a[href="https://example.com"] {
+                color: green;
+                font-weight: bold;
+              }
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <table>
+            <thead>
+            <tr>
+              <th colspan="3">Combinators</th>
+            </tr>
+            <tr>
+              <th>Combinators</th><th>Description</th><th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>selectorA + selectorB</td><td>Adjacent Sibling Combinator: This combinator only targets the immediate sibling</td><td class="code">p + button {
+                background-color: blue;
+                color: white;
+              }
+              </td>
+            </tr>
+            <tr>
+              <td>selectorA ~ selectorB</td><td>General Sibling Combinator: this combinator targets all siblings that come after selectorA</td><td class="code">h2 ~ p {
+                color: gray;
+                margin-top: 10px;
+              }
+              </td>
+            </tr>
+            <tr>
+              <td>parent > child</td><td>Child Combinator: selects elements that are direct children of a specified parent element</td><td class="code">div > p {
+                margin: 20px;
+                color: blue;
+              }
+              </td>
+            </tr>
+            <tr>
+              <td>parent descendent</td><td>Descendant Combinator: selects all elements that are descendants of a specified parent element</td><td class="code">div p {
+                color: blue;
+                font-size: 16px;
+              }
+              </td>
+            </tr>
+          </tbody>
+          </table>
+        </div>
+        <h2>Common CSS properties (by group)</h2>
+        <div class="css-properties">
+
+          <table>
+            <thead>
+            <tr>
+              <th colspan="3">CSS properties for TEXT</th>
+            </tr>
+            <tr>
+              <th>CSS Property</th><th>Description</th><th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>color</td><td>specifies the color of the text content of an element</td><td class="code">h1 {
+                color: #ff5733; /* A shade of orange */
+              }
+              </td>
+            </tr>
+            <tr>
+              <td>font</td><td>define the appearance of text, including its font family, size, weight, style, and more</td><td class="code">p {
+                font-family: 'Helvetica', 'Arial', sans-serif; /* Fallbacks: Arial, then any sans-serif */
+              }
+              </td>
+            </tr>
+            <tr>
+              <td>font-family</td><td>specify the typeface for text within an element</td><td class="code">selector {
+                font-family: "Font Name", fallback-font, generic-family;
+              }
+              </td>
+            </tr>
+          </tbody>
+          </table>
+
+          <table>
+            <thead>
+            <tr>
+              <th colspan="3">CSS properties for LIST</th>
+            </tr>
+            <tr>
+              <th>CSS Property</th><th>Description</th><th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>list-style</td><td>define the appearance of list items in ordered &lt;ol&gt; and unordered &lt;ul&gt; lists</td><td class="code">ul {
+                list-style-type: circle;
+                list-style-position: outside;
+                list-style-image: url('custom-bullet.png');
+              }
+              </td>
+            </tr>
+          </tbody>
+          </table>
+          
+          <table>
+            <thead>
+            <tr>
+              <th colspan="3">CSS properties for BACKGROUND</th>
+            </tr>
+            <tr>
+              <th>CSS Property</th><th>Description</th><th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>background</td><td>shorthand for setting multiple background-related properties in a single declaration</td><td class="code">selector {
+                background: color image position size repeat attachment origin clip;
+              }
+              </td>
+            </tr>
+            <tr>
+              <td>background-attachment</td><td>Specifies whether the background scrolls with the content or is fixed</td><td>background-attachment: fixed; /* Background image is fixed in place */
+              </td>
+            </tr>
+            <tr>
+              <td>background-color</td><td>Sets the background color</td><td>background-color: blue; /* Blue background */
+              </td>
+            </tr>
+            <tr>
+              <td>background-image</td><td>Specifies a background image.</td><td>background-image: url('image.jpg'); /* Background image */
+              </td>
+            </tr>
+          </tbody>
+          </table>
+
+
+          <table>
+            <thead>
+            <tr>
+              <th colspan="3">CSS properties for DISPLAY</th>
+            </tr>
+            
+            <tr>
+              <th>CSS Property</th><th>Description</th><th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>display</td><td>specifies how an element is displayed on the page</td><td>div {
+                display: block; /* Block-level element */
+              }
+              </td>
+            </tr>
+            <tr>
+              <td>float</td><td>to position an element to the left or right of its containing element</td><td>.float-right {
+                float: right; /* Floats the element to the right */
+              }
+              </td>
+            </tr>
+          </tbody>
+          </table>
+        </div>
+      </div>
+      <footer>
+
+      </footer>
+    </div>
+  </body>
+</html>
