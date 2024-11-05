@@ -5,8 +5,10 @@ nav {
 .project {
   display: inline-block;
   position: relative;
+  left: 10%;
   background-color: #9380c2;
   width: 100px;
   height: 100px;
   padding: 50px;
+  border: 2px solid #0583d0;
 }
