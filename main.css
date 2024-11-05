@@ -27,3 +27,10 @@ nav ul li a {
   padding: 50px;
   border: 10px solid #0583d0;
 }
+
+.project a {
+  font-family: 'Poppins', sans-serif;
+  font-size: large;
+  font-weight: bold;
+  color: #fff;
+}
