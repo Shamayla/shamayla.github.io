@@ -1,9 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+body {
+  width: 95%;
+  padding: 10px;
+}
 nav {
   color: #333;
-  margin: 0 auto;
+  margin:  10px auto;
+  padding: 10px;
   margin-bottom: 30px;
+  display: flex;
+  background-color: #333;
 }
-
+.logo {
+  width: 60px;
+  height: 60px;
+}
+nav ul {
+margin: 20px;
+}
 nav ul li {
   display: inline-block;
 }
@@ -16,21 +35,36 @@ nav ul li a {
   border-radius: 3px;
   background-color: rgb(12, 116, 177);
 }
-
-.project {
-  display: inline-block;
+h1 {
+  border-bottom: 3px solid #333;
+  margin: 10px;
+}
+.projects ul{
   position: relative;
-  left: 10%;
-  background-color: #9380c2;
-  width: 100px;
-  height: 100px;
-  padding: 50px;
-  border: 10px solid #0583d0;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.project a {
-  font-family: 'Poppins', sans-serif;
-  font-size: large;
+.projects {
+  position: relative;
+  top: 20px;
+  left: 5%;
+  padding: 20px;
+}
+.projects li {
+  display: inline-block;
+  margin: 30px;
+}
+
+.projects li a {
+  padding: 50px;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: #333;
   font-weight: bold;
-  color: #fff;
+  color:#fff;
+  border-bottom: 10px solid #93572f;
+}
+.projects li a:hover {
+  background-color: #93572f;
 }
