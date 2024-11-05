@@ -1,5 +1,20 @@
 nav {
-  background-color: yellow
+  color: #333;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 20px;
+  color:#fff;
+  border-radius: 3px;
+  background-color: rgb(12, 116, 177);
 }
 
 .project {
