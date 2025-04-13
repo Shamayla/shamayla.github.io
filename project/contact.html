@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <style>
-    body {
-      height: 100vh;
+    html, body {
+     height: 100vh;
     }
-
+    main {
+      padding-bottom: 80px;
+    }
     .contact-us {
       width: 60%;
       margin: 0 auto;
@@ -44,31 +46,47 @@
       margin: 10px;
     }
 
+    footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    z-index: 100;
+    margin-top: 0;
+    height: auto;
+   }
+
     @media (max-width: 480px) {
       .contact-options {
         height: 40vh;
         flex-direction: column;
 
       }
-
       .option img {
-      width: 8%;
-    }
+        width: 8%;
+      }
 
-    .option {
-      padding-bottom: 20px;
-    }
+      .option {
+        padding-bottom: 20px;
+      }
 
-    .contact {
-      margin: 10px;
-    }
+     .contact-us {
+        width: 80%;
+        margin: 0 auto;
+      }
+      .contact {
+       margin: 10px;
+      }
 
-    .label {
+     .label {
       font-size: 16px;
-    }
-    footer {
-      
-    }
+      }
+
+      footer {
+        padding: 10px;
+      }
     }
   </style>
   <body>
