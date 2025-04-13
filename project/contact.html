@@ -18,6 +18,9 @@
       margin: 0 auto;
     }
 
+    .home-link {
+      display: none;
+    }
     .contact-options {
       display: flex;
       height: 35vh;
@@ -72,6 +75,21 @@
         padding-bottom: 20px;
       }
 
+      .home-link {
+      display: block;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      padding-top: 12px;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 10px;
+      margin-top: 10px;
+      }
+
+      .home-link:hover {
+      background-color: #286d5c;
+    }
      .contact-us {
         width: 80%;
         margin: 0 auto;
@@ -79,7 +97,9 @@
       .contact {
        margin: 10px;
       }
-
+      .head-title {
+        padding-bottom: 0;
+      }
      .label {
       font-size: 16px;
       }
@@ -90,7 +110,10 @@
     }
   </style>
   <body>
-      <div class="head-title"><p>Learn Quran with Sajida</p></div>
+      <div class="head-title">
+        <p>Learn Quran with Sajida</p>
+        <a class="home-link" href="./index.html">Home</a>
+      </div>
       <nav>
           <ul>
             <li><a href="./index.html">Home</a></li>
@@ -100,7 +123,6 @@
             <li><a href="./contact.html">Contact</a></li>
           </ul>
       </nav>
-
     <main>
 
       <div class="contact-us">
